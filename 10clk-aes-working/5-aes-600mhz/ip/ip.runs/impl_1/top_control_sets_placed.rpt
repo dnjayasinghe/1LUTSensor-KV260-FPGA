@@ -1,0 +1,156 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Thu Jan 12 21:17:20 2023
+| Host         : DESKTOP-O3QOG7I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xck26
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    78 |
+|    Minimum number of control sets                        |    78 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    27 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    78 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |    33 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    31 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |           10 |
+| No           | No                    | Yes                    |              55 |           33 |
+| No           | Yes                   | No                     |               2 |            1 |
+| Yes          | No                    | No                     |             442 |          183 |
+| Yes          | No                    | Yes                    |            3200 |         1316 |
+| Yes          | Yes                   | No                     |              28 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+---------------------------------------------------+-----------------------+------------------+----------------+--------------+
+|    Clock Signal   |                   Enable Signal                   |    Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+---------------------------------------------------+-----------------------+------------------+----------------+--------------+
+|  clk600_IBUF_BUFG |                                                   |                       |                1 |              1 |         1.00 |
+|  clk0t            |                                                   |                       |                1 |              1 |         1.00 |
+|  clk12_IBUF_BUFG  | uartTX/r_SM_Main[2]                               |                       |                1 |              1 |         1.00 |
+|  clk12_IBUF_BUFG  |                                                   | AESResetn_i_1_n_0     |                1 |              2 |         2.00 |
+|  clk12_IBUF_BUFG  | uartRX/r_Bit_Index[2]_i_2__0_n_0                  | uartRX/r_Bit_Index    |                1 |              3 |         3.00 |
+|  clk12_IBUF_BUFG  | uartRX/E[0]                                       |                       |                2 |              3 |         1.50 |
+|  clk12_IBUF_BUFG  | uartTX/r_Bit_Index                                | uartTX/r_Clock_Count0 |                1 |              3 |         3.00 |
+|  clk12_IBUF_BUFG  | uartTX/r_Clock_Count_0                            | uartTX/r_Clock_Count0 |                1 |              5 |         5.00 |
+|  clk12_IBUF_BUFG  | uartTX/E[0]                                       |                       |                5 |              7 |         1.40 |
+|  clk12_IBUF_BUFG  | TXdata[7]_i_1_n_0                                 |                       |                4 |              8 |         2.00 |
+|  clk12_IBUF_BUFG  | uartRX/r_Clock_Count[7]_i_1_n_0                   |                       |                2 |              8 |         4.00 |
+|  clk12_IBUF_BUFG  | uartRX/fsm_reg[1][0]                              |                       |                2 |              8 |         4.00 |
+|  clk12_IBUF_BUFG  | uartTX/r_Tx_Data_1                                |                       |                2 |              8 |         4.00 |
+|  clk600_IBUF_BUFG | data2_reg_1344_1407_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1472_1535_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1600_1663_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1856_1919_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1920_1983_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_256_319_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_320_383_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_192_255_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1984_2047_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1792_1855_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_512_575_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_64_127_0_6_i_1_n_0                      |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1280_1343_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_576_639_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_640_703_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_384_447_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_448_511_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_832_895_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_896_959_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_960_1023_0_6_i_1_n_0                    |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_768_831_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_0_63_0_6_i_8_n_0                        |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1216_1279_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1152_1215_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1024_1087_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1088_1151_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_128_191_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_704_767_0_6_i_1_n_0                     |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1408_1471_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1664_1727_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1728_1791_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | data2_reg_1536_1599_0_6_i_1_n_0                   |                       |                2 |             10 |         5.00 |
+|  clk600_IBUF_BUFG | p_0_in__0                                         |                       |                4 |             11 |         2.75 |
+|  clk12_IBUF_BUFG  | uartTX/fsm_reg[3][0]                              |                       |                6 |             14 |         2.33 |
+|  clk12_IBUF_BUFG  | uartTX/r_Tx_Done_reg_0                            | addr1[0]_i_1_n_0      |                6 |             17 |         2.83 |
+|  clk12_IBUF_BUFG  |                                                   |                       |                8 |             20 |         2.50 |
+|  clk12_IBUF_BUFG  |                                                   | AESResetn             |               33 |             55 |         1.67 |
+|  clk12_IBUF_BUFG  | dataIn[15][7]_i_1_n_0                             |                       |               20 |            123 |         6.15 |
+|  clk12_IBUF_BUFG  | Din[127]_i_1_n_0                                  |                       |               59 |            123 |         2.08 |
+|  clk12_IBUF_BUFG  | gen_code_label[0].aes_tinyi/iw                    | AESResetn             |               80 |            128 |         1.60 |
+|  clk12_IBUF_BUFG  | gen_code_label[0].aes_tinyi/state                 | AESResetn             |               69 |            128 |         1.86 |
+|  clk12_IBUF_BUFG  | gen_code_label[2].aes_tinyi/w                     | AESResetn             |               55 |            128 |         2.33 |
+|  clk12_IBUF_BUFG  | gen_code_label[2].aes_tinyi/busy29_out            | AESResetn             |               76 |            128 |         1.68 |
+|  clk12_IBUF_BUFG  | gen_code_label[2].aes_tinyi/istate[3][31]_i_1_n_0 | AESResetn             |               91 |            128 |         1.41 |
+|  clk12_IBUF_BUFG  | gen_code_label[2].aes_tinyi/iw                    | AESResetn             |               77 |            128 |         1.66 |
+|  clk12_IBUF_BUFG  | gen_code_label[2].aes_tinyi/state                 | AESResetn             |               64 |            128 |         2.00 |
+|  clk12_IBUF_BUFG  | gen_code_label[0].aes_tinyi/busy29_out            | AESResetn             |               79 |            128 |         1.62 |
+|  clk12_IBUF_BUFG  | gen_code_label[0].aes_tinyi/w                     | AESResetn             |               62 |            128 |         2.06 |
+|  clk12_IBUF_BUFG  | gen_code_label[0].aes_tinyi/istate[3][31]_i_1_n_0 | AESResetn             |               97 |            128 |         1.32 |
+|  clk12_IBUF_BUFG  | dataCt[15][7]_i_1_n_0                             |                       |               92 |            128 |         1.39 |
+|  clk12_IBUF_BUFG  | gen_code_label[4].aes_tinyi/w                     | AESResetn             |               70 |            128 |         1.83 |
+|  clk12_IBUF_BUFG  | gen_code_label[4].aes_tinyi/busy29_out            | AESResetn             |               75 |            128 |         1.71 |
+|  clk12_IBUF_BUFG  | gen_code_label[4].aes_tinyi/istate[3][31]_i_1_n_0 | AESResetn             |              105 |            128 |         1.22 |
+|  clk12_IBUF_BUFG  | gen_code_label[4].aes_tinyi/iw                    | AESResetn             |               76 |            128 |         1.68 |
+|  clk12_IBUF_BUFG  | gen_code_label[4].aes_tinyi/state                 | AESResetn             |               62 |            128 |         2.06 |
+|  clk12_IBUF_BUFG  | gen_code_label[3].aes_tinyi/w                     | AESResetn             |               57 |            128 |         2.25 |
+|  clk12_IBUF_BUFG  | gen_code_label[3].aes_tinyi/busy29_out            | AESResetn             |               75 |            128 |         1.71 |
+|  clk12_IBUF_BUFG  | gen_code_label[3].aes_tinyi/istate[3][31]_i_1_n_0 | AESResetn             |              102 |            128 |         1.25 |
+|  clk12_IBUF_BUFG  | gen_code_label[3].aes_tinyi/iw                    | AESResetn             |               80 |            128 |         1.60 |
+|  clk12_IBUF_BUFG  | gen_code_label[3].aes_tinyi/state                 | AESResetn             |               65 |            128 |         1.97 |
+|  clk12_IBUF_BUFG  | gen_code_label[1].aes_tinyi/w                     | AESResetn             |               57 |            128 |         2.25 |
+|  clk12_IBUF_BUFG  | gen_code_label[1].aes_tinyi/iw                    | AESResetn             |               79 |            128 |         1.62 |
+|  clk12_IBUF_BUFG  | gen_code_label[1].aes_tinyi/state                 | AESResetn             |               68 |            128 |         1.88 |
+|  clk12_IBUF_BUFG  | gen_code_label[1].aes_tinyi/istate[3][31]_i_1_n_0 | AESResetn             |               96 |            128 |         1.33 |
+|  clk12_IBUF_BUFG  | gen_code_label[1].aes_tinyi/busy29_out            | AESResetn             |               84 |            128 |         1.52 |
++-------------------+---------------------------------------------------+-----------------------+------------------+----------------+--------------+
+
+

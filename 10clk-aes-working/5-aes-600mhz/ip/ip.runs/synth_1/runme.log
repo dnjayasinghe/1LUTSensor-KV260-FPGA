@@ -1,0 +1,570 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.runs/synth_1'.)
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/zedboard-origtdcsensor-8del-new'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:top:1.0'. The one found in IP location 'd:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new' will take precedence over the same IP in location d:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.cache/ip 
+Command: synth_design -top top -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4848
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_tx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartTX.v:47]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_tx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartTX.v:48]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_tx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartTX.v:49]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_tx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartTX.v:50]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_tx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartTX.v:51]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartrx.v:23]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartrx.v:24]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartrx.v:25]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartrx.v:26]
+WARNING: [Synth 8-2507] parameter declaration becomes local in uart_rx with formal parameter declaration list [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartrx.v:27]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1634.945 ; gain = 125.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'aes128_table_ecb' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'subword' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:795]
+INFO: [Synth 8-6155] done synthesizing module 'subword' (1#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:795]
+INFO: [Synth 8-6157] synthesizing module 'subbytes' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:435]
+INFO: [Synth 8-6157] synthesizing module 'SubBytes8bit' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:494]
+INFO: [Synth 8-6157] synthesizing module 'GF_MULINV_8' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:541]
+INFO: [Synth 8-6157] synthesizing module 'GF_MULINV_4' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:644]
+INFO: [Synth 8-6155] done synthesizing module 'GF_MULINV_4' (2#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:644]
+INFO: [Synth 8-6155] done synthesizing module 'GF_MULINV_8' (3#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:541]
+INFO: [Synth 8-6155] done synthesizing module 'SubBytes8bit' (4#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:494]
+INFO: [Synth 8-6155] done synthesizing module 'subbytes' (5#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:435]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumns' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:855]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumns' (6#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:855]
+INFO: [Synth 8-6157] synthesizing module 'invsubbytes' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:707]
+INFO: [Synth 8-6155] done synthesizing module 'invsubbytes' (7#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:707]
+INFO: [Synth 8-6157] synthesizing module 'inv_mixcolumn' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:899]
+INFO: [Synth 8-6155] done synthesizing module 'inv_mixcolumn' (8#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:899]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_table_ecb' (9#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/aes128_table_ecb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartTX.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (10#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartTX.v:36]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartrx.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (11#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/uartrx.v:14]
+INFO: [Synth 8-6157] synthesizing module 'LUT_TDC' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/LUT_TDC.v:21]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+	Parameter INIT bound to: 64'b1111111111001010111100001100101000001111110010100000000011001010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (12#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59312]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27621]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (13#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27621]
+INFO: [Synth 8-6155] done synthesizing module 'LUT_TDC' (14#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/LUT_TDC.v:21]
+WARNING: [Synth 8-689] width (1) of port connection 'out' does not match port width (4) of module 'LUT_TDC' [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/top.v:112]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE3' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+	Parameter CASCADE bound to: NONE - type: string 
+	Parameter DELAY_FORMAT bound to: COUNT - type: string 
+	Parameter DELAY_SRC bound to: DATAIN - type: string 
+	Parameter DELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 600.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE3' (15#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53852]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/top.v:216]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53753]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (16#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53753]
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.srcs/sources_1/imports/ZEDBOARD-OrigTDCSensor-8del-new/top.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1747.113 ; gain = 238.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1765.039 ; gain = 255.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1765.039 ; gain = 255.930
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.501 . Memory (MB): peak = 1778.062 ; gain = 0.000
+CRITICAL WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'IDELAYCTRL_inst' of type 'IDELAYCTRL' is '7SERIES'; it is being changed to match the current FPGA architecture, 'ULTRASCALE'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. Failure to set the SIM_DEVICE appropriately will prevent bitstream generation for this design.
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/const3.xdc]
+Finished Parsing XDC File [D:/const3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/const3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1900.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1900.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1900.391 ; gain = 391.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1900.391 ; gain = 391.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1900.391 ; gain = 391.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'now_state_reg' in module 'aes128_table_ecb'
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                              001 |                              000
+                  iSTATE |                              100 |                              001
+                 iSTATE0 |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'now_state_reg' using encoding 'one-hot' in module 'aes128_table_ecb'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_IDLE |                              000 |                              000
+          s_TX_START_BIT |                              001 |                              001
+          s_TX_DATA_BITS |                              010 |                              010
+           s_TX_STOP_BIT |                              011 |                              011
+               s_CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1900.391 ; gain = 391.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input    128 Bit         XORs := 10    
+	   2 Input     32 Bit         XORs := 95    
+	   2 Input     24 Bit         XORs := 5     
+	   2 Input     11 Bit         XORs := 360   
+	   3 Input     11 Bit         XORs := 60    
+	   9 Input      8 Bit         XORs := 80    
+	  16 Input      8 Bit         XORs := 80    
+	   3 Input      8 Bit         XORs := 5     
+	   2 Input      8 Bit         XORs := 5     
+	   2 Input      4 Bit         XORs := 160   
+	   2 Input      2 Bit         XORs := 160   
+	   2 Input      1 Bit         XORs := 2880  
+	   3 Input      1 Bit         XORs := 1440  
+	   4 Input      1 Bit         XORs := 640   
+	   5 Input      1 Bit         XORs := 240   
+	   6 Input      1 Bit         XORs := 240   
++---Registers : 
+	              128 Bit    Registers := 7     
+	               32 Bit    Registers := 81    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 53    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 5     
+	   6 Input  120 Bit        Muxes := 1     
+	   2 Input  120 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 147   
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 13    
+	   2 Input    8 Bit        Muxes := 108   
+	   4 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 2     
+	  10 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 2     
+	   3 Input    6 Bit        Muxes := 10    
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 7     
+	  10 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 38    
+	   5 Input    3 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 15    
+	   2 Input    2 Bit        Muxes := 6     
+	   3 Input    2 Bit        Muxes := 17    
+	   4 Input    2 Bit        Muxes := 3     
+	   8 Input    2 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 2     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 121   
+	   4 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 17    
+	   5 Input    1 Bit        Muxes := 11    
+	   7 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 2     
+	   9 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:27 ; elapsed = 00:03:31 . Memory (MB): peak = 2074.262 ; gain = 565.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|subword     | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
+|invsubbytes | sb         | 256x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------+-----------+----------------------+---------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------+-----------+----------------------+---------------+
+|top         | data2_reg  | Implied   | 2 K x 8              | RAM64M8 x 64  | 
++------------+------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:39 ; elapsed = 00:03:43 . Memory (MB): peak = 2488.984 ; gain = 979.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:40 ; elapsed = 00:03:44 . Memory (MB): peak = 2493.234 ; gain = 984.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------+-----------+----------------------+---------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------+-----------+----------------------+---------------+
+|top         | data2_reg  | Implied   | 2 K x 8              | RAM64M8 x 64  | 
++------------+------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:44 ; elapsed = 00:03:48 . Memory (MB): peak = 2522.344 ; gain = 1013.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin out_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin out_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin out_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin out_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin out_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin out_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin out_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin outWire_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin outWire_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin outWire_inferred:in0[1] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:49 ; elapsed = 00:03:53 . Memory (MB): peak = 2526.051 ; gain = 1016.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:49 ; elapsed = 00:03:53 . Memory (MB): peak = 2526.051 ; gain = 1016.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:49 ; elapsed = 00:03:53 . Memory (MB): peak = 2526.051 ; gain = 1016.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:49 ; elapsed = 00:03:53 . Memory (MB): peak = 2526.051 ; gain = 1016.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:50 ; elapsed = 00:03:54 . Memory (MB): peak = 2526.051 ; gain = 1016.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:50 ; elapsed = 00:03:54 . Memory (MB): peak = 2526.051 ; gain = 1016.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY8     |     2|
+|3     |IDELAYCTRL |     1|
+|4     |IDELAYE3   |     1|
+|5     |LUT1       |    18|
+|6     |LUT2       |   601|
+|7     |LUT3       |   822|
+|8     |LUT4       |  1493|
+|9     |LUT5       |  1589|
+|10    |LUT6       | 13241|
+|11    |MUXF7      |  1634|
+|12    |MUXF8      |   804|
+|13    |RAM64M8    |    32|
+|14    |RAM64X1D   |    32|
+|15    |FDCE       |  3251|
+|16    |FDPE       |     5|
+|17    |FDRE       |   493|
+|18    |IBUF       |     3|
+|19    |OBUF       |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:51 ; elapsed = 00:03:54 . Memory (MB): peak = 2526.051 ; gain = 1016.941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:36 ; elapsed = 00:03:48 . Memory (MB): peak = 2526.051 ; gain = 881.590
+Synthesis Optimization Complete : Time (s): cpu = 00:03:51 ; elapsed = 00:03:55 . Memory (MB): peak = 2526.051 ; gain = 1016.941
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.261 . Memory (MB): peak = 2537.105 ; gain = 0.000
+CRITICAL WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'IDELAYCTRL_inst' of type 'IDELAYCTRL' is '7SERIES'; it is being changed to match the current FPGA architecture, 'ULTRASCALE'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. Failure to set the SIM_DEVICE appropriately will prevent bitstream generation for this design.
+INFO: [Netlist 29-17] Analyzing 2510 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2556.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 69 instances were transformed.
+  BUFG => BUFGCE: 2 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 32 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 32 instances
+
+Synth Design complete, checksum: 5697742a
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 26 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:03 ; elapsed = 00:04:07 . Memory (MB): peak = 2556.961 ; gain = 1299.336
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/Onedrive/OneDrive - UNSW/My Onedrive/PhD/Src/New-Delay-Sensor/1LUT-Kria260/ip/ip.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 12 21:15:25 2023...

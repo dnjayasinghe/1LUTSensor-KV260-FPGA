@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-109,-303",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_tx -pg 1 -lvl 5 -x 1170 -y 160 -defaultsOSRD
+preplace port port-id_rx -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_clk_in -pg 1 -lvl 0 -x 0 -y 30 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 310 -y -180 -defaultsOSRD
+preplace inst clockbuffer_0 -pg 1 -lvl 1 -x 310 -y 100 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 800 -y -60 -defaultsOSRD
+preplace inst top_0 -pg 1 -lvl 4 -x 990 -y 80 -defaultsOSRD
+preplace netloc clk_in_1 1 0 1 20 30n
+preplace netloc clk_wiz_0_clk_out1 1 3 1 900 -80n
+preplace netloc clk_wiz_0_clk_out2 1 3 1 890 -60n
+preplace netloc clockbuffer_0_clk_out 1 1 2 560 -60 N
+preplace netloc rx_1 1 0 4 NJ 180 NJ 180 N 180 900
+preplace netloc top_0_tx 1 4 1 1060J 80n
+levelinfo -pg 1 0 310 630 800 990 1170
+pagesize -pg 1 -db -bbox -sgen -100 -270 1240 470
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"3",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}
